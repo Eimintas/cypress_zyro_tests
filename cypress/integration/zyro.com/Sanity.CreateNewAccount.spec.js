@@ -28,6 +28,7 @@ module.exports = (on, config) => {
        cy.wait(1000)
        cy.get('.actions > .button').click()
        cy.wait(1000)
-       cy.get('.welcome').should('be.visible') 
+       cy.get('.welcome').should('be.visible')
+       cy.wait(1000)
     })
    })
