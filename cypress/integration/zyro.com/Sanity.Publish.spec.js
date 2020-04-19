@@ -30,7 +30,7 @@ module.exports = (on, config) => {
       const uuid = () => Cypress._.random(0, 1e6)
       const id = uuid()
       const testname = `testname${id}`
-      cy.get('#domain').type('testname')
+      cy.get('#domain').type(testname)
       // End -
       cy.get('.modal__footer > .zyro-button').click()
       cy.wait(5000)
